@@ -1,0 +1,222 @@
+<!-- html Code -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meine Webseite</title>
+    <link rel="stylesheet" href="/assets/font/MrsEaves/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class=" navbar_burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img class=" navbar_logo  navbar_smaller" src="assets/logo.png" alt="Logo">
+
+    </div>
+
+
+    <div id="nav-overlay" class="navbar_nav-overlay">
+        <ul>
+            <li onclick="scrollToSection('herzlich')">
+                <div class="title-container">
+                    <h1 class="title-header">h</h1>
+                    <h1 class="title-header e">e</h1>
+                    <h1 class="title-header">rzlich</h1>
+                </div>
+            </li>
+            <li onclick="scrollToSection('team')">
+                <div class="title-container">
+                    <h1 class="title-header">t</h1>
+                    <h1 class="title-header e">e</h1>
+                    <h1 class="title-header">am</h1>
+                </div>
+            </li>
+            <li onclick="scrollToSection('leistungen')">
+                <div class="title-container">
+                    <h1 class="title-header">l</h1>
+                    <h1 class="title-header e">e</h1>
+                    <h1 class="title-header">istungen</h1>
+                </div>
+            </li>
+            <li onclick="scrollToSection('besonderheit')">
+                <div class="title-container">
+                    <h1 class="title-header">b</h1>
+                    <h1 class="title-header e">e</h1>
+                    <h1 class="title-header">sonderheit</h1>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-indicator_dot active" id="herzlich-dot"></div>
+        <div class="scroll-indicator_dot" id="team-dot"></div>
+        <div class="scroll-indicator_dot" id="leistungen-dot"></div>
+        <div class="scroll-indicator_dot" id="besonderheit-dot"></div>
+    </div>
+    <div id="herzlich" class="section">
+        <div class="content">
+            <div class="title-container">
+                <h1 class="title-header">h</h1>
+                <h1 class="title-header e">e</h1>
+                <h1 class="title-header">rzlich</h1>
+            </div>
+            <h2 class="subtitle">willkommen</h2>
+            <p class="text-snippet">
+                Im Jahr 2008 habe ich die Kanzlei von meinem Vater übernommen mit dem Ziel, unseren Mandanten einen
+                hervorragenden Service zu bieten. Zusammen mit meinem Team bieten wir Ihnen umfassende betriebliche und
+                steuerliche Beratung an, die jeweils individuell auf Ihre Bedürfnisse zugeschnitten ist Wir möchten
+                Ihnen nicht nur im Hier und Jetzt zur Seite stehen, sondern auch in Zukunft Partner Ihres Erfolgs
+                sein.<br /><br />
+                Schauen Sie sich gerne auf unserer Webseite um und wenn wir Ihre Neugierde erwecken, freue ich mich über
+                Ihre Kontaktaufnahme. Bei uns sind Sie stets willkommen.
+            </p>
+        </div>
+    </div>
+
+    <div id="career" class="section">
+        <!-- <div class="title-container">
+            <h1 class="title-header">w</h1>
+            <h1 class="title-header e">e</h1>
+            <h1 class="title-header">rd</h1>
+            <h1 class="title-header e">e</h1>
+            <h1 class="title-header">gang</h1>
+        </div> -->
+        <div class="title-container">
+            <h1 class="title-header">vita</h1>
+        </div>
+        <div class="content">
+            <img src="./assets/teamMember1.png" alt="Eva-Maria Mevenkamp" class="career-image">
+            <p class="text-snippet">Mein Weg zur Steuerberaterin sah wie folgt aus:
+                Nach dem Abi absolvierte ich eine Ausbildung zur Steuerfachangestellten in der Kanzlei von WP/STB/RA Dr.
+                G. Chr. Lichtenberg in Dortmund. Anschließend studierte ich Betriebswirtschaft an der FH in Münster.
+                2002 schloss ich das Studium mit dem Diplom ab und arbeitete ab dann in der Steuerkanzlei meines Vaters
+                F.-W. Mevenkamp in Münster.<br/><br/> Im Jahr 2008 wurde ich zur Steuerberaterin bestellt und übernahm nach dem
+                Tod meines Vaters die Steuerkanzlei Mevenkamp. Seit 2023 dürfen wir die Bezeichnung „landwirtschaftliche
+                Buchstelle“ führen.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="leistungen" class="section">
+        <div class="title-container">
+            <h1 class="title-header">l</h1>
+            <h1 class="title-header e">e</h1>
+            <h1 class="title-header">istungen</h1>
+        </div>
+        <h2 class="subtitle">Immer loesungsorientiert</h2>
+        <div class="custom-details">
+            <div class="summary-content">
+                <span>für Unternehmen </span>
+                <div class="icon">+</div>
+            </div>
+            <ul class="details-content">
+                <li>Steuerliche Beratung von Einzelunternehmen, Personen- und
+                    Kapitalgesellschaften</li>
+                <li>Erstellung von Jahresabschlüssen nach Handels- und Steuerrecht
+                </li>
+                <li>Betriebliche und private Steuererklärung</li>
+                <li>Erledigung der laufenden Finanz- und Lohnbuchhaltung</li>
+                <li>Betriebswirtschaftliche Auswertungen, ausführliche Beratung bei
+                    Investitionsentscheidungen</li>
+                <li>Existenzgründung</li>
+            </ul>
+        </div>
+
+        <div class="custom-details">
+            <div class="summary-content">
+                <span>für Privatpersonen </span>
+                <div class="icon">+</div>
+            </div>
+            <ul class="details-content">
+                <li>Erstellung der Einkommensteuererklärung</li>
+            </ul>
+        </div>
+
+        <div class="custom-details">
+            <div class="summary-content">
+                <span>für Landwirte </span>
+                <div class="icon">+</div>
+            </div>
+            <ul class="details-content">
+                <li>Betriebliche und private Steuererklärung nach BMELV</li>
+                <li>Erstellen des Jahresabschlusses</li>
+                <li>Betriebswirtschaftliche Auswertungen, ausführliche Beratung bei Investitionsentscheidungen</li>
+                <li>Erledigung der laufenden Finanz- und Lohnbuchhaltung (z. B. Mitarbeiter, Saisonkräfte)</li>
+                <li>Begleitung und steuerliche Beurteilung bei der Hofnachfolge, Hofaufgabe oder Stilllegung</li>
+                <li>Steuerliche Planung und Steueroptimierung</li>
+                <li>Agrarbetriebswirtschaftliche Beratung</li>
+                <li>Unterstützung bei Grundstückskäufen oder -verkäufen (z. B. Vertragsprüfung)</li>
+            </ul>
+        </div>
+        <div class="custom-details">
+            <div class="summary-content">
+                <span>Unternehmensnachfolge </span>
+                <div class="icon">+</div>
+            </div>
+            <ul class="details-content">
+                <li>Planung und Umsetzung einer Unternehmensnachfolge
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="besonderheit" class="section">
+        <!-- Inhalt von "besonderheit" -->
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 0) {
+                document.querySelector(".navbar_logo").classList.add("smaller");
+                // adjustPadding()
+            } else {
+                document.querySelector(".navbar_logo").classList.remove("smaller");
+                setTimeout(adjustPadding, 300);
+            }
+        });
+        function adjustPadding() {
+            var navbarHeight = $('.navbar').height();
+            $('.section').css('padding-top', navbarHeight);
+        }
+
+        $(document).ready(adjustPadding);
+        $(window).resize(adjustPadding);
+
+
+
+    </script>
+
+</body>
+
+</html>
