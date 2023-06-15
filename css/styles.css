@@ -133,8 +133,7 @@ body {
   margin: 0 0 -3rem 0;
   transition: transform 0.2s ease-in;
 }
-
-.title-header {
+.title-container .title-header {
   /* background-color: #000000; */
   color: #acd36d;
   font-family: "MrsEavesRoman", sans-serif;
@@ -144,8 +143,7 @@ body {
   padding: 0;
   letter-spacing: -8px;
 }
-
-.e {
+.title-container .e {
   transform: scaleX(-1);
   font-size: 9rem;
   margin-top: -12px;
@@ -324,6 +322,184 @@ body {
   color: #acd36d;
 }
 
+#contact {
+  display: flex;
+  height: 100vh;
+}
+#contact .container {
+  flex: 1 1 700px;
+  margin: auto 250px;
+  padding: 10px;
+}
+#contact .container .screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+  height: 50vh;
+}
+#contact .container .screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+#contact .container .screen .screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#contact .container .screen .screen-header .screen-header-left {
+  margin-right: auto;
+}
+#contact .container .screen .screen-header .screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+#contact .container .screen .screen-header .screen-header-button.close {
+  background: #ed1c6f;
+}
+#contact .container .screen .screen-header .screen-header-button.maximize {
+  background: #e8e925;
+}
+#contact .container .screen .screen-header .screen-header-button.minimize {
+  background: #74c54f;
+}
+#contact .container .screen .screen-header .screen-header-right {
+  display: flex;
+}
+#contact .container .screen .screen-header .screen-header-right .screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+#contact .container .screen .screen-body {
+  display: flex;
+}
+#contact .container .screen .screen-body .screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+#contact .container .screen .screen-body .screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .screen .screen-body .screen-body-item .app-title {
+  display: flex;
+  flex-direction: column;
+  font-family: "MrsEavesRoman", sans-serif;
+  position: relative;
+  color: #acd36d;
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+#contact .container .screen .screen-body .screen-body-item .app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 25px;
+  height: 4px;
+  background: #acd36d;
+}
+#contact .container .screen .screen-body .screen-body-item .app-title .title-container .title-header {
+  font-size: 4rem;
+  margin: 10px 0px;
+  letter-spacing: -5px;
+}
+#contact .container .screen .screen-body .screen-body-item .app-title .title-container .e {
+  transform: scaleX(-1);
+  font-size: 4rem;
+  margin-left: 5px;
+  margin-right: -7px;
+  color: #c1c0c0;
+}
+#contact .container .screen .screen-body .app-contact {
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: #fff;
+}
+#contact .container .screen .screen-body .app-form .app-form-group {
+  margin-bottom: 15px;
+}
+#contact .container .screen .screen-body .app-form .app-form-group.message {
+  margin-top: 40px;
+}
+#contact .container .screen .screen-body .app-form .app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+#contact .container .screen .screen-body .app-form .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#contact .container .screen .screen-body .app-form .app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+#contact .container .screen .screen-body .app-form .app-form-control::placeholder {
+  color: #666;
+}
+#contact .container .screen .screen-body .app-form .app-form-button {
+  background: none;
+  border: none;
+  color: #acd36d;
+  transition: all 0.2s;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+#contact .container .screen .screen-body .app-form .app-form-button:hover {
+  color: white;
+}
+
+@media screen and (max-width: 520px) {
+  .background .container .screen .screen-body {
+    flex-direction: column;
+  }
+  .background .container .screen .screen-body .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+  .background .container .screen .screen-body .screen-body-item .app-title {
+    flex-direction: row;
+  }
+  .background .container .screen .screen-body .screen-body-item .app-title span {
+    margin-right: 12px;
+  }
+  .background .container .screen .screen-body .screen-body-item .app-title:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .background .container .screen .screen-body {
+    padding: 40px;
+  }
+  .background .container .screen .screen-body .screen-body-item {
+    padding: 0;
+  }
+}
 .footer {
   position: relative;
   width: 100%;
