@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Meine Webseite</title>
     <link rel="stylesheet" href="/assets/font/MrsEaves/stylesheet.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -24,9 +25,8 @@
         <ul>
             <li onclick="scrollToSection('herzlich')">
                 <div class="title-container">
-                    <h1 class="title-header">h</h1>
+                    <h1 class="title-header">hom</h1>
                     <h1 class="title-header e">e</h1>
-                    <h1 class="title-header">rzlich</h1>
                 </div>
             </li>
             <li onclick="scrollToSection('career')">
@@ -43,7 +43,7 @@
             </li>
             <li onclick="scrollToSection('digital')">
                 <div class="title-container">
-                    <h1 class="title-header">digitalisie</h1>
+                    <h1 class="title-header">digitalisi</h1>
                     <h1 class="title-header e">e</h1>
                     <h1 class="title-header">rung</h1>
                 </div>
@@ -200,10 +200,10 @@
 
     <footer class="footer">
         <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
+            <div class="wave wave1" id="wave1"></div>
+            <div class="wave wave2" id="wave2"></div>
+            <div class="wave wave3" id="wave3"></div>
+            <div class="wave wave4" id="wave4"></div>
         </div>
         <ul class="social-icon">
             <li class="social-icon__item"><a class="social-icon__link" href="#">
@@ -221,10 +221,10 @@
         </ul>
         <ul class="menu">
             <li onclick="scrollToSection('herzlich',true)" class="menu__item"><p class="menu__link"
-                   >herzlich</p></li>
+                   >home</p></li>
             <li onclick="scrollToSection('career',true)" class="menu__item"><p class="menu__link" >vita</p></li>
             <li onclick="scrollToSection('leistungen',true)" class="menu__item"><p class="menu__link">leistungen</p></li>
-            <li onclick="scrollToSection('digital',true)" class="menu__item"><p class="menu__link">Digitalisierung</p></li>
+            <li onclick="scrollToSection('digital',true)" class="menu__item"><p class="menu__link">digitalisierung</p></li>
         
         </ul>
         <p>&copy;2023 Eva-Maria Mevenkamp | All Rights Reserved</p>
@@ -244,19 +244,8 @@
                 // adjustPadding()
             } else {
                 document.querySelector(".navbar_logo").classList.remove("smaller");
-                setTimeout(adjustPadding, 300);
             }
         });
-        function adjustPadding() {
-            var navbarHeight = $('.navbar').height();
-            $('.section').css('padding-top', navbarHeight);
-        }
-
-        $(document).ready(adjustPadding);
-        $(window).resize(adjustPadding);
-
-
-
     </script>
 
 </body>

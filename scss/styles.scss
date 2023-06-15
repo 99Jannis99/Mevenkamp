@@ -2,6 +2,7 @@
 body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -79,7 +80,7 @@ body {
     transition: transform 0.3s ease-in-out, opacity 0.3s, visibility 0.3s;
     opacity: 0;
     visibility: hidden;
-    z-index: 5;
+    z-index: 15;
 
 
     &.active {
@@ -140,7 +141,7 @@ body {
 .section {
   scroll-snap-align: start;
   height: 100vh;
-  transition: padding-top 0.3s ease-in-out;
+  padding-top: 145.469px;
 }
 
 
@@ -327,7 +328,7 @@ body {
               content: "";
               position: absolute;
               left: -1em;
-              top: 50%;
+              top: 0.7rem;
               transform: translateY(-50%);
               width: 6px;
               height: 6px;
@@ -419,99 +420,100 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
-.social-icon,
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
+  p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 
-.social-icon__item,
-.menu__item {
-  list-style: none;
-}
+  .waves {
 
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
+    .wave {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url("/assets/wave.png");
+      background-size: 1000px 100px;
 
-.social-icon__link:hover {
-  transform: translateY(-10px);
-}
+      &.wave1 {
+        z-index: 10;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWaves 4s linear infinite;
+      }
 
+      &.wave2 {
+        z-index: 5;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animate 4s linear infinite !important;
+      }
 
+      &.wave3 {
+        z-index: 10;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWaves 3s linear infinite;
+      }
 
-.footer p {
-  color: #fff;
-  margin: 15px 10px 10px 10px;
-  font-size: 1rem;
-  font-weight: 300;
-}
+      &.wave4 {
+        z-index: 5;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animate 3s linear infinite;
+      }
+    }
+  }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
 
-.menu__link {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 15px 20px 10px 20px;
-  transition: 0.5s;
-  opacity: 0.75;
-  cursor: pointer;
-  font-weight: 300;
-}
+    .social-icon__item,
+    .menu__item {
+      list-style: none;
+    }
 
-.menu__link:hover {
-  opacity: 1;
-}
+    .social-icon__link {
+      font-size: 2rem;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
 
-.wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("/assets/wave.png");
-  background-size: 1000px 100px;
-}
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
 
-.wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWaves 4s linear infinite;
-}
+    .menu__link {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.5s;
+      opacity: 0.75;
+      font-weight: 300;
 
-.wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animate 4s linear infinite !important;
-}
-
-.wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 15px;
-  animation: animateWaves 3s linear infinite;
-}
-
-.wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animate 3s linear infinite;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 @keyframes animateWaves {
@@ -520,7 +522,7 @@ body {
   }
 
   100% {
-    background-positon-x: 0px;
+    background-position-x: 0px;
   }
 }
 
@@ -530,6 +532,6 @@ body {
   }
 
   100% {
-    background-positon-x: 0px;
+    background-position-x: 0px;
   }
 }
