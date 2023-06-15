@@ -27,29 +27,29 @@ window.onscroll = function () {
   }
 };
 
-let currentSectionIndex = 0;
-const sections = Array.from(document.querySelectorAll(".section"));
+// let currentSectionIndex = 0;
+// const sections = Array.from(document.querySelectorAll(".section"));
 
-window.addEventListener(
-  "wheel",
-  (event) => {
-    event.preventDefault();
+// window.addEventListener(
+//   "wheel",
+//   (event) => {
+//     event.preventDefault();
 
-    if (event.deltaY > 0) {
-      // Scrolling down
-      currentSectionIndex = Math.min(
-        currentSectionIndex + 1,
-        sections.length - 1
-      );
-    } else {
-      // Scrolling up
-      currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
-    }
+//     if (event.deltaY > 0) {
+//       // Scrolling down
+//       currentSectionIndex = Math.min(
+//         currentSectionIndex + 1,
+//         sections.length - 1
+//       );
+//     } else {
+//       // Scrolling up
+//       currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
+//     }
 
-    sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
-  },
-  { passive: false }
-);
+//     sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
+//   },
+//   { passive: false }
+// );
 
 var customDetails = document.querySelectorAll(".custom-details");
 customDetails.forEach((detail) => {
