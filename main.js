@@ -6,10 +6,10 @@ function toggleMenu() {
   navOverlay.classList.toggle("active");
 }
 
-function scrollToSection(id) {
+function scrollToSection(id, footer) {
   var section = document.getElementById(id);
   section.scrollIntoView({ behavior: "smooth" });
-  toggleMenu();
+  footer ? null : toggleMenu();
 }
 
 window.onscroll = function () {
