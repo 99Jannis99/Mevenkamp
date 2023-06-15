@@ -233,8 +233,14 @@ body {
   margin-top: 7px;
   margin-bottom: 50px;
 }
-#leistungen .custom-details .summary-content {
-  margin: 10px 250px;
+#leistungen .content {
+  display: flex;
+}
+#leistungen .content .container .custom-details.active .details-content {
+  max-height: 500px;
+}
+#leistungen .content .container .custom-details .summary-content {
+  margin: 10px 50px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -245,20 +251,21 @@ body {
   padding: 10px;
   padding: 10px 20px;
 }
-#leistungen .custom-details .details-content {
+#leistungen .content .container .custom-details .details-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
-  width: 1000px;
+  max-width: 35vw;
+  background-color: rgba(255, 255, 255, 0.37);
 }
-#leistungen .custom-details .details-content li {
+#leistungen .content .container .custom-details .details-content li {
   position: relative;
   list-style-type: none;
   color: #797777;
-  margin: 10px 250px;
+  margin: 10px 50px;
   font-size: 1.3rem;
 }
-#leistungen .custom-details .details-content li::before {
+#leistungen .content .container .custom-details .details-content li::before {
   content: "";
   position: absolute;
   left: -1em;
@@ -269,81 +276,62 @@ body {
   border-radius: 50%;
   background-color: #acd36d;
 }
-#leistungen .custom-details.active .details-content {
-  max-height: 500px;
-}
 
 footer {
   background-color: #797777;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
-
-.footer-container {
+footer .footer-logo img {
+  height: 50px;
+}
+footer .footer-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   width: 100%;
 }
-
-.footer-links {
+footer .footer-container .footer-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
-.footer-links a {
+footer .footer-container .footer-links a {
   color: #797777;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1.2rem;
 }
-
-.footer-links a:hover {
+footer .footer-container .footer-links a:hover {
   color: white;
-  /* you can change this color to any color you like */
   font-size: 1.4rem;
 }
-
-.footer-logo img {
-  height: 50px;
-  /* adjust as needed */
-}
-
-.contact-form {
+footer .footer-container .contact-form {
   margin-left: 20px;
 }
-
-.contact-form h2 {
+footer .footer-container .contact-form h2 {
   color: #797777;
 }
-
-.contact-form form {
+footer .footer-container .contact-form form {
   display: flex;
   flex-direction: column;
 }
-
-.contact-form input,
-.contact-form textarea {
+footer .footer-container .contact-form form input,
+footer .footer-container .contact-form form textarea {
   padding: 10px;
   margin-top: 10px;
   width: 200px;
-  /* adjust as needed */
 }
-
-.contact-form button {
+footer .footer-container .contact-form form button {
   padding: 10px;
   margin-top: 10px;
   cursor: pointer;
-  background-color: #797777;
+  background-color: #acd36d;
   color: white;
   border: none;
   transition: background-color 0.3s ease;
 }
-
-.contact-form button:hover {
+footer .footer-container .contact-form form button:hover {
   background-color: white;
-  color: #797777;
+  color: #acd36d;
 }
