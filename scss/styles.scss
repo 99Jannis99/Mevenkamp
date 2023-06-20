@@ -1,7 +1,11 @@
 /* styles.css */
+html {
+  overflow-x: hidden;
+}
+
 body {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,34 +24,35 @@ body {
   transition: height 0.3s ease-in-out;
 
   &_logo {
-    margin: 40px 50px;
-    height: 6rem;
-    transition: margin 0.5s ease-in-out, height 0.5s ease-in-out;
+    margin: min(2.4vw, 40px) min(7.2vw, 50px);
+    // width: clamp(450px, 400px, 80vw);
+    width: min(60vw, 450px);
+    transition: margin 0.5s ease-in-out, width 0.5s ease-in-out;
 
     &.smaller {
-      margin: 10px 30px;
-      height: 4rem;
+      margin: min(2.4vw, 10px) min(7.2vw, 30px);
+      width: min(60vw, 350px);
     }
   }
 
   &_burger-menu {
     position: fixed;
-    top: 1.5rem;
+    top: min(4.5vw, 30px);
     /* Anpassen der vertikalen Position */
-    left: 50px;
+    left: min(4.5vw, 50px);
     /* Anpassen der horizontalen Position */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: min(9.74vw, 55px);
+    height: min(6vw, 40px);
     cursor: pointer;
-    margin-right: 15vw;
+    // margin-right: 15vw;
     z-index: 100;
 
     div {
-      width: 3.5rem;
-      height: 0.45rem;
+      width: 100%;
+      height: min(1.2vw, 8px);
       border-radius: 10px;
       background-color: #acd36d;
       transition: all 0.3s linear;
@@ -92,7 +97,6 @@ body {
 
     ul {
       list-style: none;
-      font-size: 6rem;
       color: #acd36d;
       text-align: left;
 
@@ -115,7 +119,7 @@ body {
 
 .scroll-indicator {
   position: fixed;
-  left: 100px;
+  margin-left: min(100px, 4vw);
   top: 50%;
   display: flex;
   flex-direction: column;
@@ -123,12 +127,12 @@ body {
   justify-content: center;
 
   &_dot {
-    width: 30px;
-    height: 30px;
+    width: min(4vw, 30px);
+    height: min(4vw, 30px);
     border-radius: 50%;
     background-color: transparent;
     background-color: #c1c0c0;
-    margin-bottom: 20px;
+    margin-bottom: min(3vw, 20px);
     transition: background-color 0.5s ease-in-out;
 
     &.active {
@@ -141,14 +145,14 @@ body {
 .section {
   scroll-snap-align: start;
   height: 100vh;
-  padding-top: 145.469px;
+  padding-top: min(12vw, 145.469px);
 }
 
 
 .title-container {
   display: flex;
   flex-direction: row;
-  margin: 0 0 -3rem 0;
+  margin: 0;
   transition: transform 0.2s ease-in;
 
   .title-header {
@@ -156,18 +160,19 @@ body {
     color: #acd36d;
     font-family: "MrsEavesRoman", sans-serif;
     font-weight: 100;
-    font-size: 8rem;
+    font-size: min(15vw, 8rem);
     margin: 0;
     padding: 0;
-    letter-spacing: -8px;
+    letter-spacing: max(-0.84vw, -8px);
+    line-height: min(8vw, 6.5rem);
   }
 
   .e {
     transform: scaleX(-1);
-    font-size: 9rem;
-    margin-top: -12px;
-    margin-left: 10px;
-    margin-right: -10px;
+    font-size: min(16vw, 9rem);
+    margin-top: max(-0.94vw, -12px);
+    margin-left: min(0.94vw, 10px);
+    margin-right: max(-0.94vw, -10px);
     color: #c1c0c0;
     /* margin: 0 05px; */
   }
@@ -178,10 +183,10 @@ body {
 
 
 .subtitle {
-  font-size: 2.5rem;
+  font-size: min(5.5vw, 2.5rem);
   /* adjust as needed */
   margin: 0;
-  margin-top: 20px;
+  // clamp(20px, 8vw,200px);
   letter-spacing: 2px;
   font-weight: 500;
   color: #7e8082;
@@ -191,7 +196,7 @@ body {
 .text-snippet {
   max-width: 600px;
   color: #797777;
-  font-size: 1.2rem;
+  font-size: min(3.6vw, 1.2rem);
   line-height: 1.5rem;
   text-align: left;
   /* styling for the text snippets */
@@ -206,15 +211,17 @@ body {
       rgba(255, 255, 255, 1) 100%),
     url("../assets/background.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
 
   .content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 250px;
+    margin-right: min(15vw, 250px);
+    margin-left: min(15vw);
     text-align: left;
     padding-top: 50px;
+
   }
 }
 
@@ -236,21 +243,25 @@ body {
   .content {
     display: flex;
     align-items: center;
-    margin-right: 300px;
-    margin-top: 100px;
     text-align: left;
-    margin-left: 20vw;
+    margin-top: min(5vw, 100px);
+    flex-wrap: wrap;
+    justify-content: center;
 
     .text-snippet {
       margin: 0 20px;
       justify-self: center;
       align-self: center;
       max-width: 400px;
+      min-width: 300px;
+      margin-left: min(60px);
+      margin-right: min(60px);
     }
 
     .career-image {
       width: 20vw;
-      margin: 20px;
+      min-width: 300px;
+      margin: 0 0 20px 0;
     }
   }
 
@@ -269,13 +280,14 @@ body {
       rgba(255, 255, 255, 1) 100%),
     url("../assets/background-leistungen.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .title-container {
     .title-header {
-      font-size: 12rem;
+      font-size: min(15vw, 12rem);
 
       &.e {
         margin-top: -2px;
@@ -284,14 +296,19 @@ body {
   }
 
   .subtitle {
-    margin-bottom: 3vh;
-    margin-left: -18rem;
+    margin-left: -16rem;
     margin-top: 7px;
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 
   .content {
     display: flex;
+    flex-wrap: wrap;
 
     .container {
       .custom-details {
@@ -306,10 +323,11 @@ body {
           display: flex;
           justify-content: space-between;
           cursor: pointer;
-          font-size: 2rem;
+          font-size: min(5.5vw, 2rem);
           font-weight: 500;
           color: #797777;
-          width: 500px;
+          max-width: 500px;
+          min-width: 300px;
           padding: 10px;
           padding: 10px 20px;
         }
@@ -319,6 +337,7 @@ body {
           overflow: hidden;
           transition: max-height 0.5s;
           max-width: 35vw;
+          min-width: 400px;
           background-color: rgba(255, 255, 255, 0.50);
 
           li {
@@ -326,7 +345,7 @@ body {
             list-style-type: none;
             color: #797777;
             margin: 10px 50px;
-            font-size: 1.3rem;
+            font-size: min(3.6vw, 1.3rem);
 
             &::before {
               content: "";
@@ -359,6 +378,7 @@ body {
     url("../assets/background-degitalisierung.png");
   background-size: cover;
   display: flex;
+  background-position: center;
   flex-direction: column;
   align-items: center;
 
@@ -369,15 +389,22 @@ body {
   .subtitle {
     margin-left: -140px;
     margin-top: 10px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 
   .content {
     display: flex;
-    align-items: center;
-    margin-right: 300px;
+    flex-wrap: wrap-reverse;
+    margin-right: min(15vw, 250px);
     margin-top: 100px;
     text-align: left;
-    margin-left: 20vw;
+    margin-left: min(15vw, 20vw);
+    justify-content: center;
+    // padding-top: 40px;
 
     .text-snippet {
       margin: 0 20px;
@@ -391,6 +418,8 @@ body {
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      margin-top: calc(-1.365vw + 25.667px);
+      max-height: 35vw;
 
       .my-button {
         padding: 10px;
@@ -421,14 +450,14 @@ body {
 
   .container {
     flex: 1 1 700px;
-    margin: auto 250px;
+    margin: min(13vw, 250px) min(13vw, 250px);
     padding: 10px;
 
     .screen {
       position: relative;
       background: #3e3e3e;
       border-radius: 15px;
-      height: 50vh;
+      // height: 50vh;
 
       &:after {
         content: '';
@@ -491,14 +520,51 @@ body {
 
       .screen-body {
         display: flex;
+        flex-wrap: wrap;
 
         .screen-body-item {
           flex: 1;
-          padding: 50px;
+          padding: min(7vw, 50px);
 
           &.left {
             display: flex;
             flex-direction: column;
+          }
+
+          @media (max-width:600px) {
+
+            .screen-body {
+              padding: 40px;
+
+              .screen-body-item {
+                padding: 0;
+              }
+            }
+          }
+
+          @media (max-width: 520px) {
+
+            .screen-body {
+              flex-direction: column;
+
+              .screen-body-item {
+                &.left {
+                  margin-bottom: 30px;
+                }
+
+                .app-title {
+                  flex-direction: row;
+
+                  span {
+                    margin-right: 12px;
+                  }
+
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+            }
           }
 
           .app-title {
@@ -523,9 +589,10 @@ body {
 
             .title-container {
               .title-header {
-                font-size: 4rem;
+                font-size: min(15vw, 4rem);
                 margin: 10px 0px;
                 letter-spacing: -5px;
+                line-height: min(8vw, 1.8rem);
               }
 
               .e {
@@ -600,62 +667,12 @@ body {
 }
 
 
-
-@media screen and (max-width: 520px) {
-  .background {
-    .container {
-      .screen {
-        .screen-body {
-          flex-direction: column;
-
-          .screen-body-item {
-            &.left {
-              margin-bottom: 30px;
-            }
-
-            .app-title {
-              flex-direction: row;
-
-              span {
-                margin-right: 12px;
-              }
-
-              &:after {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .background {
-    .container {
-      .screen {
-        .screen-body {
-          padding: 40px;
-
-          .screen-body-item {
-            padding: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-
 .footer {
   position: relative;
   width: 100%;
   background: #acd36d;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -664,7 +681,7 @@ body {
   p {
     color: #fff;
     margin: 15px 0 10px 0;
-    font-size: 1rem;
+    font-size: min(2.8vw, 1rem);
     font-weight: 300;
 
     a {
@@ -721,6 +738,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    padding: 0;
     flex-wrap: wrap;
 
     .social-icon__item,
@@ -729,7 +747,7 @@ body {
     }
 
     .social-icon__link {
-      font-size: 2rem;
+      font-size:  min(6vw, 2rem);
       color: #fff;
       margin: 0 10px;
       display: inline-block;
@@ -741,7 +759,7 @@ body {
     }
 
     .menu__link {
-      font-size: 1.2rem;
+      font-size: min(3.5vw, 1.2rem) ;
       color: #fff;
       margin: 0 10px;
       display: inline-block;

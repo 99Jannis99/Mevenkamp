@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
     <link rel="stylesheet" href="/assets/font/MrsEaves/stylesheet.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -48,8 +49,13 @@
                     <h1 class="title-header">rung</h1>
                 </div>
             </li>
+            <li onclick="scrollToSection('contact')">
+                <div class="title-container">
+                    <h1 class="title-header">kontakt</h1>
+                </div>
+            </li>
         </ul>
-    </div>
+</div>
     <div class="scroll-indicator">
         <div class="scroll-indicator_dot active" id="home-dot"></div>
         <div class="scroll-indicator_dot" id="career-dot"></div>
@@ -184,18 +190,24 @@
         </div>
         <h2 class="subtitle">mit Datev</h2>
         <div class="content">
-            <div class="button-container">
-                <a href="#" class="my-button">Unternehmen online</a>
-                <a href="#" class="my-button">Arbeitnehmer online</a>
-                <a href="#" class="my-button">Personaldaten online</a>
+            <div>
+                <div class="button-container">
+                    <a href="#" class="my-button">Unternehmen online</a>
+                    <a href="#" class="my-button">Arbeitnehmer online</a>
+                    <a href="#" class="my-button">Personaldaten online</a>
+                </div>
             </div>
-            <p class="text-snippet">In Zeiten der Digitalisierung ist es wichtig das Arbeiten im Bereich der Buchführung
-                anzupassen. Für uns ist es selbstverständlich mit digitalen Tools zu arbeiten, da sie innovativ,
-                zeitunabhängig und frei von Pendelordnern sind. Die Anwendungen Unternehmen online, Arbeitnehmer online
-                und Datev Meine Steuern sind unsere Plattformen für einen sicheren und kontinuierlichen Datenaustausch.
-                Sie sind einfach in der Handhabung und erleichtern den Umgang mit Belegen, Daten und Dokumenten.
-            </p>
-
+            <div>
+                <p class="text-snippet">In Zeiten der Digitalisierung ist es wichtig das Arbeiten im Bereich der
+                    Buchführung
+                    anzupassen. Für uns ist es selbstverständlich mit digitalen Tools zu arbeiten, da sie innovativ,
+                    zeitunabhängig und frei von Pendelordnern sind. Die Anwendungen Unternehmen online, Arbeitnehmer
+                    online
+                    und Datev Meine Steuern sind unsere Plattformen für einen sicheren und kontinuierlichen
+                    Datenaustausch.
+                    Sie sind einfach in der Handhabung und erleichtern den Umgang mit Belegen, Daten und Dokumenten.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -293,6 +305,9 @@
             </li>
             <li onclick="scrollToSection('digital',true)" class="menu__item">
                 <p class="menu__link">digitalisierung</p>
+            </li>
+            <li onclick="scrollToSection('contact',true)" class="menu__item">
+                <p class="menu__link">kontakt</p>
             </li>
 
         </ul>
