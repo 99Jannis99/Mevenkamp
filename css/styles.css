@@ -32,6 +32,13 @@ body {
   margin: min(2.4vw, 10px) min(7.2vw, 30px);
   width: min(60vw, 350px);
 }
+.navbar_infotxt {
+  position: fixed;
+  font-size: 13px;
+  /* Anpassen der vertikalen Position */
+  left: min(7.5vw, 150px);
+  color: #797777;
+}
 .navbar_burger-menu {
   position: fixed;
   top: min(4.5vw, 30px);
