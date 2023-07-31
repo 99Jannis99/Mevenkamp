@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
-    <link rel="stylesheet" href="/assets/font/MrsEaves/stylesheet.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../assets/font/MrsEaves/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -17,22 +17,20 @@
             <div></div>
             <div></div>
         </div>
+       
         <p class="navbar_infotxt">
-            Eva-Maria Mevenkamp<br />
-            Steuerberaterin<br />
             Robert-Bosch-Straße 7-9<br />
             48153 Münster<br />
             Telefon: 0251-6090272<br />
-
         </p>
         <div class="navbar_container">
-            <a href="index.html" class="navbar_container_navpoints">home</a>
+            <a href="/index.html" class="navbar_container_navpoints">home</a>
             <a href="/subpages/vita.html" class="navbar_container_navpoints">vita</a>
             <a href="/subpages/performance.html" class="navbar_container_navpoints">leistungen</a>
             <a href="/subpages/digitization.html" class="navbar_container_navpoints">digitalisierung</a>
             <a href="/subpages/contact.html" class="navbar_container_navpoints">kontakt</a>
         </div>
-        <img class=" navbar_logo  smaller" src="assets/logo.png" alt="Logo">
+        <img class=" navbar_logo  smaller" src="../assets/logo.png" alt="Logo">
 
     </div>
 
@@ -40,35 +38,35 @@
     <div id="nav-overlay" class="navbar_nav-overlay">
         <ul>
             <li>
-                <a href="index.html">
+                <a href="../index.html">
                     <div class="title-container">
                         <h1 class="title-header">home</h1>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="subpages/vita.html">
+                <a href="../subpages/vita.html">
                     <div class="title-container">
                         <h1 class="title-header">vita</h1>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="subpages/performance.html">
+                <a href="../subpages/performance.html">
                     <div class="title-container">
                         <h1 class="title-header">leistungen</h1>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="subpages/digitization.html">
+                <a href="../subpages/digitization.html">
                     <div class="title-container">
                         <h1 class="title-header">digitalisierung</h1>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="subpages/contact.html">
+                <a href="../subpages/contact.html">
                     <div class="title-container">
                         <h1 class="title-header">kontakt</h1>
                     </div>
@@ -77,33 +75,39 @@
         </ul>
     </div>
     <div class="scroll-indicator">
-        <div class="scroll-indicator_dot active" id="home-dot"></div>
+        <div class="scroll-indicator_dot" id="home-dot"></div>
         <div class="scroll-indicator_dot" id="career-dot"></div>
         <div class="scroll-indicator_dot" id="leistungen-dot"></div>
-        <div class="scroll-indicator_dot" id="digitalisierung-dot"></div>
+        <div class="scroll-indicator_dot active" id="digitalisierung-dot"></div>
         <div class="scroll-indicator_dot" id="contact-dot"></div>
     </div>
-    <div id="herzlich" class="section">
+
+    <div id="digital" class="section">
+        <div class="title-container">
+            <h1 class="title-header">digitalisierung</h1>
+        </div>
+        <h2 class="subtitle">mit Datev</h2>
         <div class="content">
-            <div class="title-container">
-                <h1 class="title-header">herzlich</h1>
+            <div>
+                <div class="button-container">
+                    <a href="#" class="my-button">Unternehmen online</a>
+                    <a href="#" class="my-button">Arbeitnehmer online</a>
+                    <a href="#" class="my-button">Personaldaten online</a>
+                </div>
             </div>
-            <h2 class="subtitle">willkommen</h2>
-            <p class="text-snippet">
-                Im Jahr 2008 habe ich die Kanzlei von meinem Vater übernommen mit dem Ziel, unseren Mandanten einen
-                hervorragenden Service zu bieten. Zusammen mit meinem Team bieten wir Ihnen umfassende betriebliche und
-                steuerliche Beratung an, die jeweils individuell auf Ihre Bedürfnisse zugeschnitten ist Wir möchten
-                Ihnen nicht nur im Hier und Jetzt zur Seite stehen, sondern auch in Zukunft Partner Ihres Erfolgs
-                sein.<br /><br />
-                Schauen Sie sich gerne auf unserer Webseite um und wenn wir Ihre Neugierde erwecken, freue ich mich über
-                Ihre Kontaktaufnahme. Bei uns sind Sie stets willkommen.
-            </p>
+            <div>
+                <p class="text-snippet">In Zeiten der Digitalisierung ist es wichtig das Arbeiten im Bereich der
+                    Buchführung
+                    anzupassen. Für uns ist es selbstverständlich mit digitalen Tools zu arbeiten, da sie innovativ,
+                    zeitunabhängig und frei von Pendelordnern sind. Die Anwendungen Unternehmen online, Arbeitnehmer
+                    online
+                    und Datev Meine Steuern sind unsere Plattformen für einen sicheren und kontinuierlichen
+                    Datenaustausch.
+                    Sie sind einfach in der Handhabung und erleichtern den Umgang mit Belegen, Daten und Dokumenten.
+                </p>
+            </div>
         </div>
     </div>
-
-
-
-
     <footer class="footer">
         <div class="waves">
             <div class="wave wave1" id="wave1"></div>
@@ -150,7 +154,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>

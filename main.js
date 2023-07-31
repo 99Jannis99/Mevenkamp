@@ -12,20 +12,20 @@ function scrollToSection(id, footer) {
   footer ? null : toggleMenu();
 }
 
-window.onscroll = function () {
-  var dots = document.getElementsByClassName("scroll-indicator_dot");
-  var sections = document.getElementsByClassName("section");
-  for (var i = 0; i < sections.length; i++) {
-    if (
-      window.pageYOffset >= sections[i].offsetTop - window.innerHeight / 2 &&
-      window.pageYOffset < sections[i].offsetTop + window.innerHeight / 2
-    ) {
-      dots[i].classList.add("active");
-    } else {
-      dots[i].classList.remove("active");
-    }
-  }
-};
+// window.onscroll = function () {
+//   var dots = document.getElementsByClassName("scroll-indicator_dot");
+//   var sections = document.getElementsByClassName("section");
+//   for (var i = 0; i < sections.length; i++) {
+//     if (
+//       window.pageYOffset >= sections[i].offsetTop - window.innerHeight / 2 &&
+//       window.pageYOffset < sections[i].offsetTop + window.innerHeight / 2
+//     ) {
+//       dots[i].classList.add("active");
+//     } else {
+//       dots[i].classList.remove("active");
+//     }
+//   }
+// };
 
 // let currentSectionIndex = 0;
 // const sections = Array.from(document.querySelectorAll(".section"));
