@@ -305,16 +305,16 @@ body {
 
 
 #leistungen {
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 100%),
-    linear-gradient(to top,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 100%),
-    linear-gradient(to left,
-      rgba(255, 255, 255, 0) 80%,
-      rgba(255, 255, 255, 1) 100%),
-    url("../assets/background-leistungen.png");
+  // background: linear-gradient(to bottom,
+  //     rgba(255, 255, 255, 0) 50%,
+  //     rgba(255, 255, 255, 1) 100%),
+  //   linear-gradient(to top,
+  //     rgba(255, 255, 255, 0) 50%,
+  //     rgba(255, 255, 255, 1) 100%),
+  //   linear-gradient(to left,
+  //     rgba(255, 255, 255, 0) 80%,
+  //     rgba(255, 255, 255, 1) 100%),
+  //   url("../assets/background-leistungen.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -405,13 +405,13 @@ body {
 }
 
 #digital {
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 100%),
-    linear-gradient(to top,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 100%),
-    url("../assets/background-degitalisierung.png");
+  // background: linear-gradient(to bottom,
+  //     rgba(255, 255, 255, 0) 50%,
+  //     rgba(255, 255, 255, 1) 100%),
+  //   linear-gradient(to top,
+  //     rgba(255, 255, 255, 0) 50%,
+  //     rgba(255, 255, 255, 1) 100%),
+  //   url("../assets/background-degitalisierung.png");
   background-size: cover;
   display: flex;
   background-position: center;
