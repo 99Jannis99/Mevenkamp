@@ -133,13 +133,14 @@ body {
           text-decoration: none;
         }
 
-        // .title-container {
-        //   z-index: 2000;
-        //   background-color: #74c54f;
-        //   .title-header {
-        //     z-index: 2000;
-        //   }
-        // }
+        .title-container {
+          .title-header {
+            font-size: min(15vw, 4rem);
+            margin: 10px 0px;
+            letter-spacing: -5px;
+            line-height: min(8vw, 1.8rem);
+          }
+        }
 
         .title-container:hover {
           transform: scale(1.3);
