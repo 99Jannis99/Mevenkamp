@@ -51,11 +51,11 @@ function scrollToSection(id, footer) {
 //   { passive: false }
 // );
 
-var customDetails = document.querySelectorAll(".custom-details");
-customDetails.forEach((detail) => {
-  detail
-    .querySelector(".summary-content")
-    .addEventListener("click", function () {
-      detail.classList.toggle("active");
-    });
-});
+// var customDetails = document.querySelectorAll(".custom-details");
+// customDetails.forEach((detail) => {
+//   detail
+//     .querySelector(".summary-content")
+//     .addEventListener("click", function () {
+//       detail.classList.toggle("active");
+//     });
+// });
