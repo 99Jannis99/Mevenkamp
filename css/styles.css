@@ -54,6 +54,14 @@ body {
   left: min(7.5vw, 150px);
   color: #797777;
 }
+@media (max-width: 1250px) {
+  .navbar_infotxt {
+    display: none;
+  }
+  .navbar_container {
+    display: none;
+  }
+}
 .navbar_burger-menu {
   position: fixed;
   top: min(4.5vw, 30px);
@@ -228,6 +236,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  #career {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 150px;
+  }
+}
 #career .content {
   display: flex;
   align-items: center;
@@ -257,6 +272,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
+}
+@media (max-width: 768px) {
+  #leistungen {
+    margin-top: 50px;
+  }
 }
 #leistungen .title-container .title-header {
   font-size: min(15vw, 12rem);
@@ -278,6 +299,9 @@ body {
 #leistungen .content {
   display: flex;
   flex-wrap: wrap;
+}
+#leistungen .content .container {
+  margin-bottom: 150px;
 }
 #leistungen .content .container .custom-details.active .details-content {
   max-height: 500px;
@@ -328,6 +352,11 @@ body {
   background-position: center;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  #digital {
+    margin-top: 50px;
+  }
 }
 #digital .subtitle {
   margin-left: -140px;
@@ -380,6 +409,12 @@ body {
 #contact {
   display: flex;
   height: 100vh;
+}
+@media (max-width: 768px) {
+  #contact {
+    height: auto;
+    margin-bottom: 100px;
+  }
 }
 #contact .container {
   flex: 1 1 700px;

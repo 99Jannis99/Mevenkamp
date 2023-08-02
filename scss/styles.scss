@@ -61,6 +61,16 @@ body {
     color: #797777;
   }
 
+  @media (max-width: 1250px) {
+
+    &_infotxt {
+      display: none;
+    }
+    &_container {
+      display: none;
+    }
+  }
+
   &_burger-menu {
     position: fixed;
     top: min(4.5vw, 30px);
@@ -276,7 +286,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 150px;
+  }
 
 
   .content {
@@ -323,6 +337,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 
   .title-container {
     .title-header {
@@ -350,6 +368,8 @@ body {
     flex-wrap: wrap;
 
     .container {
+      margin-bottom: 150px;
+
       .custom-details {
         &.active {
           .details-content {
@@ -420,7 +440,9 @@ body {
   background-position: center;
   flex-direction: column;
   align-items: center;
-
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
   .title-container {
     .title-header {}
   }
@@ -486,6 +508,11 @@ body {
 #contact {
   display: flex;
   height: 100vh;
+  
+  @media (max-width: 768px) {
+    height: auto;
+    margin-bottom: 100px;
+  }
 
   .container {
     flex: 1 1 700px;
