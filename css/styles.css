@@ -24,8 +24,9 @@ body {
   transition: height 0.3s ease-in-out;
 }
 .navbar_container {
-  align-self: flex-end;
-  margin: 20px 100px 20px 0;
+  position: fixed;
+  left: 400px;
+  margin: 40px 0px 0px 0;
 }
 .navbar_container_navpoints {
   text-decoration: none;
@@ -219,6 +220,12 @@ body {
   background-size: cover;
   background-position: right;
 }
+@media (max-width: 768px) {
+  #herzlich {
+    background: white;
+    margin-top: 10px;
+  }
+}
 #herzlich .content {
   display: flex;
   flex-direction: column;
@@ -277,6 +284,8 @@ body {
 @media (max-width: 768px) {
   #leistungen {
     margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 100px;
   }
 }
 #leistungen .title-container .title-header {
@@ -302,6 +311,11 @@ body {
 }
 #leistungen .content .container {
   margin-bottom: 150px;
+}
+@media (max-width: 768px) {
+  #leistungen .content .container {
+    margin-bottom: 0px;
+  }
 }
 #leistungen .content .container .custom-details.active .details-content {
   max-height: 500px;
@@ -548,7 +562,8 @@ body {
 #contact .container .screen .screen-body .app-contact {
   margin-top: auto;
   font-size: 0.75rem;
-  color: #fff;
+  color: #ffffff;
+  text-decoration: none;
 }
 #contact .container .screen .screen-body .app-form .app-form-group {
   margin-bottom: 15px;

@@ -24,8 +24,10 @@ body {
   transition: height 0.3s ease-in-out;
 
   &_container {
-    align-self: flex-end;
-    margin: 20px 100px 20px 0;
+    position: fixed;
+    left: 400px;
+    // align-self: center;
+    margin: 40px 0px 0px 0;
 
     &_navpoints {
       text-decoration: none;
@@ -66,6 +68,7 @@ body {
     &_infotxt {
       display: none;
     }
+
     &_container {
       display: none;
     }
@@ -262,6 +265,11 @@ body {
   background-size: cover;
   background-position: right;
 
+  @media (max-width: 768px) {
+    background: white;
+    margin-top: 10px;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -286,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (max-width: 768px) {
     margin-top: 50px;
     height: auto;
@@ -338,8 +347,11 @@ body {
   flex-direction: column;
   align-items: center;
   height: auto;
+
   @media (max-width: 768px) {
     margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 100px;
   }
 
   .title-container {
@@ -369,6 +381,10 @@ body {
 
     .container {
       margin-bottom: 150px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 0px;
+      }
 
       .custom-details {
         &.active {
@@ -440,9 +456,11 @@ body {
   background-position: center;
   flex-direction: column;
   align-items: center;
+
   @media (max-width: 768px) {
     margin-top: 50px;
   }
+
   .title-container {
     .title-header {}
   }
@@ -508,7 +526,7 @@ body {
 #contact {
   display: flex;
   height: 100vh;
-  
+
   @media (max-width: 768px) {
     height: auto;
     margin-bottom: 100px;
@@ -675,7 +693,8 @@ body {
         .app-contact {
           margin-top: auto;
           font-size: 0.75rem;
-          color: #fff;
+          color: #ffffff;
+          text-decoration: none;
         }
 
         .app-form {
