@@ -284,7 +284,6 @@ body {
 @media (max-width: 768px) {
   #leistungen {
     margin-top: 50px;
-    height: fit-content;
     margin-bottom: 100px;
   }
 }
