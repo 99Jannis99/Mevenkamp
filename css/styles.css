@@ -678,6 +678,7 @@ body {
   font-size: min(3.5vw, 1.2rem);
   color: #fff;
   margin: 0 10px;
+  text-decoration: none;
   display: inline-block;
   cursor: pointer;
   transition: 0.5s;
