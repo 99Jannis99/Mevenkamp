@@ -858,24 +858,54 @@ body {
       }
     }
   }
+
+  .circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    bottom: -50px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+
+
+  }
+
+  .first {
+    background: #add36c;
+    left: -50px;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+  }
+  .second {
+    bottom: -80px;
+    background: #b8b9bc;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    -moz-border-radius: 120px;
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+  }
 }
 
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
+// @keyframes animateWaves {
+//   0% {
+//     background-position-x: 1000px;
+//   }
 
-  100% {
-    background-position-x: 0px;
-  }
-}
+//   100% {
+//     background-position-x: 0px;
+//   }
+// }
 
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
+// @keyframes animate {
+//   0% {
+//     background-position-x: -1000px;
+//   }
 
-  100% {
-    background-position-x: 0px;
-  }
-}
+//   100% {
+//     background-position-x: 0px;
+//   }
+// }
