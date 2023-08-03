@@ -55,6 +55,10 @@ body {
   left: min(7.5vw, 150px);
   color: #797777;
 }
+.navbar_infotxt .link {
+  color: #797777;
+  text-decoration: none;
+}
 @media (max-width: 1250px) {
   .navbar_infotxt {
     display: none;
