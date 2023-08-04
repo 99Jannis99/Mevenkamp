@@ -61,7 +61,8 @@ body {
     /* Anpassen der vertikalen Position */
     left: min(7.5vw, 150px);
     color: #797777;
-    .link{
+
+    .link {
       color: #797777;
       text-decoration: none;
     }
@@ -867,20 +868,23 @@ body {
     position: absolute;
     width: 140px;
     height: 140px;
-    bottom: -50px;
+    bottom: -60px;
     -moz-border-radius: 70px;
     -webkit-border-radius: 70px;
     border-radius: 70px;
 
-
+    @media (max-width:800px) {
+      display: none;
+    }
   }
 
   .first {
-    background: #b8b9bc;
-    left: -50px;
+    background: rgba(140, 140, 140, 0.7);
+    right: 50px;
   }
+
   .second {
-    bottom: -80px;
+    bottom: -20px;
     background: #add36c;
     border: solid;
     border-width: 2px;
@@ -894,22 +898,22 @@ body {
   }
 }
 
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
+// @keyframes animateWaves {
+//   0% {
+//     background-position-x: 1000px;
+//   }
 
-  100% {
-    background-position-x: 0px;
-  }
-}
+//   100% {
+//     background-position-x: 0px;
+//   }
+// }
 
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
+// @keyframes animate {
+//   0% {
+//     background-position-x: -1000px;
+//   }
 
-  100% {
-    background-position-x: 0px;
-  }
-}
+//   100% {
+//     background-position-x: 0px;
+//   }
+// }
