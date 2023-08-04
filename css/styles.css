@@ -711,10 +711,11 @@ body {
   position: absolute;
   width: 140px;
   height: 140px;
-  bottom: 260px;
+  bottom: 215px;
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
   border-radius: 70px;
+  z-index: 100;
 }
 @media (max-width: 800px) {
   .footer .circle {
@@ -726,10 +727,10 @@ body {
   right: 50px;
 }
 .footer .second {
-  bottom: 300px;
+  bottom: 255px;
   background: #add36c;
   border: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: white;
   right: -50px;
   width: 200px;
